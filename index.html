@@ -1,0 +1,378 @@
+  <!DOCTYPE html>
+  <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Твоё образование</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./login.html">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: white;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      }
+
+      header .logo {
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      header nav a {
+        margin: 0 12px;
+        text-decoration: none;
+        color: #333;
+        font-size: 15px;
+      }
+
+      header .login {
+        background: #2d4bff;
+        color: white;
+        padding: 10px 22px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 70px;
+        border-radius: 20px;
+        margin: 40px 50px;
+        background: white;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 1.3;
+      }
+
+      .hero h1 span.orange { color: #ff7b00; }
+      .hero h1 span.red { color: #ff3b30; }
+
+      .search-box {
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .search-box input {
+        padding: 12px 18px;
+        font-size: 15px;
+        width: 240px;
+        border-radius: 25px;
+        border: 1px solid #fff;
+      }
+
+      .search-box button {
+        padding: 12px 30px;
+        font-size: 16px;
+        background: #2d4bff;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+
+      .cards {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 40px auto;
+        padding: 50px 0;
+        background: #eef2ff;
+      }
+
+      .card {
+        background: #2d4bff;
+        color: white;
+        padding: 25px;
+        width: 260px;
+        border-radius: 18px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      }
+
+      .card h3 { margin-top: 0; font-size: 20px; }
+
+      .illustration { width: 50%; }
+      .illustration img { width: 100%; }
+    </style>
+  </head>
+
+  <body class="bg-gradient-to-br from-white to-orange-50 text-gray-900">
+
+  <header>
+    <div class="logo">Твоё образование</div>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#pr">Курсы</a>
+      <a href="#">Генераторы</a>
+      <a href="#">Учителю</a>
+      <a href="#">Ученику</a>
+      <a href="#">Руководства</a>
+      <a href="#">Новости</a>
+      <a href="#">Магазин</a>
+    </nav>
+    <a class="login" href="./login.html">Войти</a>
+  </header>
+
+  <section class="hero">
+    <div class="text">
+      <h1>
+        Обучающие <span class="orange">курсы</span><br>
+        Генераторы <span class="red">задач</span>
+      </h1>
+      <p>И многое другое для учителей и обучающихся.<br>Проект старается сделать онлайн образование доступным.</p>
+
+      <div class="search-box">
+        <input type="text" placeholder="🔍 Искать по сайту...">
+        <button>Найти</button>
+      </div>
+    </div>
+
+    <div class="illustration">
+      <img src="./OBJECTS.png" alt="Illustration">
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>Курсы</h3>
+      <p>Материалы для самообразования, повышения квалификации и аттестации.</p>
+    </div>
+
+    <div class="card">
+      <h3>Генераторы</h3>
+      <p>Задания без готовых решений и широкий выбор вариантов.</p>
+    </div>
+
+    <div class="card">
+      <h3>Сертификат</h3>
+      <p>Мы работаем над лицензией для выдачи госдокументов.</p>
+    </div>
+  </section>
+
+  <section style="padding:50px 0; text-align:center;" id="pr">
+    <h2 style="font-size:34px; margin-bottom:5px; font-weight:900;">Актуальные программы</h2>
+    <p style="color:#555; margin-bottom:40px;">Популярные образовательные программы на нашей платформе.</p>
+
+    <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
+
+      <div style="width:300px; background:white; border-radius:18px; box-shadow:0 4px 12px rgba(0,0,0,0.1); padding-bottom:20px; text-align:left;">
+        <img src="./Group 337 (9).png" style="width:100%; border-radius:18px 18px 0 0;">
+        <div style="padding:15px;">
+          <small style="color:#777;">Математика 8 класс</small>
+          <h3 style="font-size:18px; font-weight:700;">Решение текстовых задач</h3>
+          <strong style="color:#ff6600;">1000 РУБ</strong>
+          <div style="margin-top:10px; font-size:14px; color:#666;">⏱ 4ч 30мин | 📚 8 уроков | 👥 50 учеников</div>
+          <button style="margin-top:15px; width:100%; padding:12px; border:none; background:#ff7b00; color:white; border-radius:25px;">Записаться</button>
+        </div>
+      </div>
+
+      <div style="width:300px; background:white; border-radius:18px; box-shadow:0 4px 12px rgba(0,0,0,0.1); padding-bottom:20px; text-align:left;">
+        <img src="./Group 339 (9).png" style="width:100%; border-radius:18px 18px 0 0;">
+        <div style="padding:15px;">
+          <small style="color:#777;">UI/UX дизайн</small>
+          <h3 style="font-size:18px; font-weight:700;">UI/UX дизайн для начинающих</h3>
+          <strong style="color:#ff6600;">35000 РУБ</strong>
+          <div style="margin-top:10px; font-size:14px; color:#666;">⏱ 22ч 30мин | 📚 34 урока | 👥 250 учеников</div>
+          <button style="margin-top:15px; width:100%; padding:12px; border:none; background:#ff7b00; color:white; border-radius:25px;">Записаться</button>
+        </div>
+      </div>
+
+      <div style="width:300px; background:white; border-radius:18px; box-shadow:0 4px 12px rgba(0,0,0,0.1); padding-bottom:20px; text-align:left;">
+        <img src="./Group 338 (9).png" style="width:100%; border-radius:18px 18px 0 0;">
+        <div style="padding:15px;">
+          <small style="color:#777;">UI/UX дизайн</small>
+          <h3 style="font-size:18px; font-weight:700;">UI/UX дизайн для продолжающих</h3>
+          <strong style="color:#ff6600;">65000 РУБ</strong>
+          <div style="margin-top:10px; font-size:14px; color:#666;">⏱ 22ч 30мин | 📚 34 урока | 👥 25 учеников</div>
+          <button style="margin-top:15px; width:100%; padding:12px; border:none; background:#ff7b00; color:white; border-radius:25px;">Записаться</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section style="padding:60px 0; background:#fff3e5; display:flex; align-items:center; justify-content:center; gap:60px;">
+    <img src="./OBJECTS (1).png" style="width:380px;">
+    <div>
+      <h2 style="font-size:36px; font-weight:900;">Быстрый <span style="color:#ff7b00;">доступ</span></h2>
+      <ul style="list-style:none; padding:0; margin-top:20px; font-size:18px; line-height:1.8;">
+        <li>🔵 Онлайн-курсы</li>
+        <li>🔵 Генераторы</li>
+        <li>🔵 Библиотека материалов</li>
+        <li>🔵 Методические разработки</li>
+        <li>🔵 Онлайн мероприятия</li>
+      </ul>
+    </div>
+  </section>
+
+  <section style="padding:70px 0; text-align:center;">
+    <h2 style="font-size:36px; font-weight:900;">Что говорят о нас</h2>
+    <p style="color:#666; margin-bottom:40px;">Учителя и ученики, которые пользуются нашей платформой</p>
+
+    <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
+
+      <div style="width:300px; padding:25px; background:white; border-radius:18px; box-shadow:0 4px 12px rgba(0,0,0,0.08); text-align:left;">
+        <p style="color:#555; font-size:15px; line-height:1.6;">"Teachings of the great explorer of truth, the master-builder of human happiness..."</p>
+        <div style="margin-top:20px; display:flex; align-items:center; gap:10px;">
+          <img src="./Ellipse 34 (2).png" style="width:45px; height:45px; border-radius:50%;">
+          <div>
+            <strong>Finlay Kirk</strong><br>
+            <small style="color:#777;">Web Developer</small>
+          </div>
+        </div>
+      </div>
+
+      <div style="width:300px; padding:25px; background:white; border-radius:18px; box-shadow:0 4px 12px rgba(0,0,0,0.08); text-align:left;">
+        <p style="color:#555; font-size:15px; line-height:1.6;">"Contrary to popular belief, Lorem Ipsum is not simply random text..."</p>
+        <div style="margin-top:20px; display:flex; align-items:center; gap:10px;">
+          <img src="./Ellipse 34.png" style="width:45px; height:45px; border-radius:50%;">
+          <div>
+            <strong>Dannette P. Cervantes</strong><br>
+            <small style="color:#777;">Web Design</small>
+          </div>
+        </div>
+      </div>
+
+      <div style="width:300px; padding:25px; background:white; border-radius:18px; box-shadow:0 4px 12px rgba(0,0,0,0.08); text-align:left;">
+        <p style="color:#555; font-size:15px; line-height:1.6;">"There are many variations of passages of Lorem Ipsum available..."</p>
+        <div style="margin-top:20px; display:flex; align-items:center; gap:10px;">
+          <img src="./Ellipse 34 (1).png" style="width:45px; height:45px; border-radius:50%;">
+          <div>
+            <strong>Clara R. Altman</strong><br>
+            <small style="color:#777;">UI/UX Design</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+    <section class="text-center pt-12">
+      <h1 class="text-4xl font-bold mb-2">Наша команда</h1>
+      <p class="text-gray-500">Те, кто стоят у истоков образовательного проекта</p>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-6">
+      
+      <div class="bg-white rounded-xl shadow p-4">
+        <img src="./Group 337.png" class="rounded-lg w-full h-52 object-cover" />
+        <h3 class="mt-4 font-semibold text-lg">Маминов Сергей</h3>
+        <p class="text-sm text-gray-500">Учитель математики @maminov</p>
+        <p class="text-sm mt-2 text-gray-600">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo.
+        </p>
+        <p class="text-orange-500 font-semibold mt-3">Руководитель проекта</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-4">
+        <img src="./Group 338.png" class="rounded-lg w-full h-52 object-cover" />
+        <h3 class="mt-4 font-semibold text-lg">Tracy D. Wright</h3>
+        <p class="text-sm text-gray-500">Professor @George Brown College</p>
+        <p class="text-sm mt-2 text-gray-600">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo.
+        </p>
+        <p class="text-orange-500 font-semibold mt-3">Engineering physics</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-4">
+        <img src="./Group 339.png" class="rounded-lg w-full h-52 object-cover" />
+        <h3 class="mt-4 font-semibold text-lg">Cynthia A. Nelson</h3>
+        <p class="text-sm text-gray-500">Professor @George Brown College</p>
+        <p class="text-sm mt-2 text-gray-600">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo.
+        </p>
+        <p class="text-orange-500 font-semibold mt-3">Engineering physics</p>
+      </div>
+
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-10">
+      <div class="bg-blue-700 text-white rounded-2xl py-10 px-6 relative overflow-hidden">
+
+        <div class="absolute left-0 top-0 w-40 h-40 border-2 rounded-full border-white/40"></div>
+        <div class="absolute right-10 top-0 w-52 h-52 border-2 rounded-full border-white/40"></div>
+
+        <h2 class="text-2xl font-bold text-center">Подпишись на нашу рассылку</h2>
+        <p class="text-center text-white/80 mt-2">
+          Обещаем не спамить и высылать полезные материалы.
+        </p>
+
+        <div class="flex justify-center mt-6">
+          <input
+            type="email"
+            placeholder="Email адрес"
+            class="px-4 py-3 rounded-l-full w-80 text-gray-800 focus:outline-none"
+          />
+          <button
+            class="px-6 py-3 bg-orange-500 hover:bg-orange-600 rounded-r-full font-semibold"
+          >
+            Отправить
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-orange-50 pt-12 pb-8 text-gray-800">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-10 px-6">
+
+        <div>
+          <h3 class="font-bold text-xl mb-4">Твоё образование</h3>
+          <p class="text-sm text-gray-600">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-4">О проекте</h3>
+          <ul class="space-y-1 text-sm">
+            <li>О нас</li>
+            <li>Вакансии</li>
+            <li>Обратная связь</li>
+            <li><a href="./pasxalka.html">ЧаВо?</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-4">Курсы</h3>
+          <ul class="space-y-1 text-sm">
+            <li>Категории</li>
+            <li>Как учиться</li>
+            <li>Стать преподавателем</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-4">Контакты</h3>
+          <ul class="text-sm space-y-1">
+            <li>+7 900000000</li>
+            <li>kursy@tvooebr.ru</li>
+            <li>
+              Россия, Челябинская область, г. Магнитогорск
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="text-center text-sm text-gray-600 mt-8">
+        Твоё образование, Все права защищены, 2023–2024
+      </p>
+    </footer>
+
+  </body>
+  </html>
